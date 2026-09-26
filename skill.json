@@ -1,0 +1,40 @@
+{
+  "name": "genpark-gui-screen-som-coordinate-mapper-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Set-of-Marks (SoM) bounding box resolution and relative viewport coordinate mapper for computer-use vision agents.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "vision-agent",
+  "tags": [
+    "computer-use",
+    "som-mapper",
+    "gui-automation",
+    "vision-grounding",
+    "viewport-scaling"
+  ],
+  "inputs": {
+    "element_id": {
+      "type": "string",
+      "default": "elem_btn_checkout_01"
+    },
+    "normalized_bbox": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "mapping_id": {
+      "type": "string"
+    },
+    "target_click_centroid": {
+      "type": "object"
+    },
+    "os_input_action_string": {
+      "type": "string"
+    },
+    "is_reliably_targetable": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
